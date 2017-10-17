@@ -8,7 +8,7 @@ Example:
 
 This is awesome
 
-What does it does when foo is in an external lib,
+What does it do when foo is in an external lib,
 	and the external lib is dynamically loaded with dlopen,
 	and that we close the lib handle before calling backtrace?
 
