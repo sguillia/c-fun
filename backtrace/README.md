@@ -26,7 +26,7 @@ But once show() returns, it returns into the closed lib...
 [1]    56944 segmentation fault  ./a.out
 ```
 
-So we must goto back into main, but goto works only inside a function, so ket's use setjmp and longjmp
+So we must goto back into main, but goto works only inside a function, so let's use setjmp and longjmp
 
 ```
 0   a.out                               0x000000010cd23dbe show + 46
