@@ -30,6 +30,8 @@ void show()
 
 	// Jump back to main, setjmp() in main will return 42
 	longjmp(env, 42);
+
+	// Will segfault if return here
 }
 
 int main(int ac, char **av)
@@ -44,6 +46,7 @@ int main(int ac, char **av)
 	
 	printf("Ret of setjmp is %d\n", ret);
 	
+	// Should check dlopen return val
 	h = dlopen("libfoo.so", RTLD_LAZY);
 	
 	void *foo = dlsym(h, "foo"); // Get function pointer
