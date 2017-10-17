@@ -1,4 +1,5 @@
 backtrace() shows list of functions call stack
+
 Example:
 ```
 0   a.out                               0x000000010769ddfa show + 42
